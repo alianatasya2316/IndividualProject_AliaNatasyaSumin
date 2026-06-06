@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<style name="Base.Theme.IndividualProject_AliaNatasyaSumin" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/primary_blue</item>
+    <item name="colorPrimaryDark">@color/primary_dark</item>
+    <item name="colorAccent">@color/accent_gold</item>
+</style>
+
+<style name="Theme.IndividualProject_AliaNatasyaSumin" parent="Base.Theme.IndividualProject_AliaNatasyaSumin" />
+</resources>

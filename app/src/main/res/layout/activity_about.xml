@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/photo"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alia Natasya Sumin"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student ID: 2025198363\nICT602: Mobile Technology and Development \n© 2026 All Rights Reserved"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvGithub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Click here for GitHub Repository\nhttps://github.com/alianatasya2316"
+            android:textAlignment="center"
+            android:textColor="@color/primary_blue" />
+
+        <TextView
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="#EEEEEE"
+            android:padding="30dp"
+            android:text="How to use the billing calculator:\n1. Select Month\n2. Enter usage of electricity unit used (1-1000)\n3. Set rebate (0-5%)\n4. Tap Calculate to Save button\n5. The calculation is saved"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</ScrollView>

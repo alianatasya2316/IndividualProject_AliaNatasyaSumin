@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Rubric Requirement: Custom Title Bar
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Utility Calculator");
+            getSupportActionBar().setTitle("Electricity Bill Calculator");
         }
 
         etUnits = findViewById(R.id.etUnits);

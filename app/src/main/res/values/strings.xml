@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EcoWatt: Bill Pro</string>
+    <string name="app_name">Electricity Bill Calculator</string>
 
     <string-array name="months_array">
         <item>January</item>
@@ -16,5 +16,5 @@
         <item>December</item>
     </string-array>
 
-    <string name="github_url">https://github.com/alianatasya2316/ICT602-Project</string>
+    <string name="github_url">https://github.com/alianatasya2316/IndividualProject_AliaNatasyaSumin</string>
 </resources>

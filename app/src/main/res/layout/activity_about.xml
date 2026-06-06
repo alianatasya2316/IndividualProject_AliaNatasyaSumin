@@ -46,7 +46,7 @@
             android:layout_margin="40dp"
             android:background="#EEEEEE"
             android:padding="30dp"
-            android:text="How to use the billing calculator\n\n1. Select Month\n2. Enter usage of electricity unit used (1-1000)\n3. Set rebate (0-5%)\n4. Tap Calculate to Save button\n5. The calculation is saved"
+            android:text="How to use the billing calculator:\n\n1. Select Month\n2. Enter usage of electricity (1-1000)\n3. Set rebate (0-5%)\n4. Click Calculate to Save button"
             android:textSize="15dp" />
     </LinearLayout>
 

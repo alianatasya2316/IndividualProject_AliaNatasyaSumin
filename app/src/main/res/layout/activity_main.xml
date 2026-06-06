@@ -13,38 +13,48 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bill Estimator"
+            android:text="Electricity Bill Calculator"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="@color/primary_blue"
             android:layout_gravity="center"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter usage and rebate to calculate monthly charges."
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"/>
+            android:text="Calculate your monthly bill with current TNB rates."
+            android:layout_marginBottom="25dp"
+            android:textAlignment="center"
+            android:textSize="14sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select Month"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
         <Spinner
             android:id="@+id/spinnerMonth"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:entries="@array/months_array"
-            android:background="@android:drawable/btn_dropdown"/>
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter usage of electricity (kWh):"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Usage (kWh)"
-            app:helperText="Range: 1 - 1000"
+            android:hint="Example: 250"
+            app:helperText="Range: 1 - 1000 kWh"
             android:layout_marginBottom="15dp">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUnits"
@@ -58,6 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rebate Percentage: 0%"
+            android:textStyle="bold"
             android:layout_marginTop="10dp"/>
 
         <SeekBar
@@ -66,15 +77,18 @@
             android:layout_height="wrap_content"
             android:max="5"
             android:progress="0"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
 
         <Button
             android:id="@+id/btnCalculate"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Calculate &amp; Save"
+            android:textSize="18sp"
             android:backgroundTint="@color/primary_blue"
-            android:layout_marginBottom="20dp"/>
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="15dp"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -101,17 +115,21 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/primary_dark"
-                    android:layout_marginTop="5dp"/>
+                    android:layout_marginTop="8dp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <Button
             android:id="@+id/btnGoHistory"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View History"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="50dp"
+            android:text="View Billing History"
+            android:backgroundTint="#40297A"
+            app:cornerRadius="8dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"/>
 
         <Button
             android:id="@+id/btnAbout"
@@ -119,8 +137,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About This App"
-            android:textColor="@color/primary_dark"
-            android:layout_marginTop="8dp"/>
+            android:textColor="#78709B"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 </ScrollView>
